@@ -456,3 +456,37 @@ The complete text-cleaning logic and data exploration charts are available in th
 * **Data Science:** Python, Pandas, NumPy
 * **Visualization:** WordCloud, Matplotlib
 
+
+# 12. 📑 SMS Analytics: Advanced Preprocessing & EDA
+
+This project focuses on the critical initial phases of building an **SMS Spam Detection system**. It transitions from raw, noisy text to a structured, feature-rich dataset through rigorous cleaning and quantitative linguistic analysis.
+
+---
+
+## 🎯 Project Objective
+To engineer a high-fidelity text-cleaning pipeline and perform **Exploratory Data Analysis (EDA)** to identify the dominant vocabulary and patterns in mobile communications.
+
+---
+
+## 🛠️ Methodology & Insights
+* **Text Refinement:** Implemented a custom pipeline for punctuation removal, lowercase normalization, and stopword filtering.
+* **Domain-Specific Filtering:** Removed contextually irrelevant tokens (e.g., 'jurong', 'crazy') to sharpen the model's focus on predictive terms.
+
+* **Visual Linguistics:** Generated a **Word Cloud** to immediately identify the most frequent terms across the dataset.
+
+* **Quantitative Analysis:** Isolated the **Top 20 most common words** (e.g., 'call', 'free', 'ur'), providing the statistical foundation for future feature engineering and classification.
+
+---
+
+## 🚀 Technical Implementation
+The complete preprocessing logic and frequency analysis charts are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/14Xskqbadn8rdTOBXY2Dt08QDXn4hF-c8#scrollTo=68503b62)**
+
+---
+
+## 🧪 Tech Stack
+* **Language:** Python
+* **NLP Library:** NLTK
+* **Data Science:** Pandas, NumPy
+* **Visualization:** WordCloud, Seaborn, Matplotlib

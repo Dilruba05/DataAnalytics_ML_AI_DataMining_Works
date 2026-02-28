@@ -278,3 +278,35 @@ The complete Python code, data cleaning steps, and evaluation charts are availab
 * **Machine Learning:** Scikit-Learn
 * **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
+
+
+# 07. 💳 Customer Segmentation: K-Means Clustering for Credit Card Data
+
+This project utilizes **Unsupervised Machine Learning** to identify distinct consumer archetypes within credit card usage data. By applying the **K-Means Clustering** algorithm, raw transaction histories are transformed into actionable customer segments to drive data-driven marketing and financial strategies.
+
+---
+
+## 🎯 Project Objective
+The goal is to partition a diverse customer base into groups with similar spending behaviors, credit limits, and payment patterns. This allows for personalized product offerings, optimized interest rates, and improved customer retention.
+
+
+## 🛠️ Data Pipeline & Clustering
+* **Preprocessing:** Handled missing values via imputation and applied **StandardScaler** to normalize features like `Balance` and `Credit_Limit` for distance-based calculations.
+* **K-Means Workflow:** Optimized the number of clusters ($k$) using the **Elbow Method** to minimize intra-cluster variance.
+
+* **Segment Identification:** Classified customers into profiles such as "High-Spenders," "Installment Users," and "Prudent Payers" to enable targeted marketing and risk management.
+
+
+
+## 🚀 Technical Implementation
+The complete data pipeline, including cluster profiling and visualizations, is available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1DRy-0KrirAAelPnosIct3HUp3eT0hfin?usp=sharing)**
+
+---
+
+## 🧪 Tech Stack
+* **Language:** Python
+* **Machine Learning:** Scikit-Learn (K-Means)
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Seaborn, Matplotlib

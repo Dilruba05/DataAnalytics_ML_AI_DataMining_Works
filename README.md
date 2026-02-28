@@ -423,3 +423,36 @@ The complete data analysis, performance reports, and class distribution charts a
 * **Evaluation:** ROC-AUC, Precision-Recall, Confusion Matrix
 * **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
+
+
+# 11. 📩 SMS Spam Detection: Natural Language Processing (NLP)
+
+This project features a specialized **NLP pipeline** designed to filter mobile messages. Using the **NLTK** library, it transforms raw, unstructured SMS text into a cleaned format to distinguish between 'spam' (fraudulent) and 'ham' (legitimate) communications.
+
+
+## 🎯 Project Objective
+To build an efficient text-cleaning engine that isolates high-impact keywords by stripping away linguistic noise such as punctuation and common stopwards.
+
+
+## 🛠️ Data & NLP Pipeline
+* **Dataset:** SMS messages labeled as **Ham** or **Spam**.
+* **Preprocessing (NLTK):**
+    * **Tokenization:** Segmenting sentences into individual words.
+    * **Noise Removal:** Stripping punctuation and special characters.
+    * **Stopword Filtering:** Removing common filler words (e.g., "the", "is") using the NLTK corpus.
+
+* **Feature Engineering:** Implemented a reusable cleaning function to prepare a "Bag of Words" for downstream machine learning models.
+
+
+## 🚀 Technical Implementation
+The complete text-cleaning logic and data exploration charts are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/12cskgKD47gk3qHRq89CfMS7ZzYXRaUyn#scrollTo=7f90ae27)**
+
+---
+
+## 🧪 Tech Stack
+* **NLP Library:** NLTK (Natural Language Toolkit)
+* **Data Science:** Python, Pandas, NumPy
+* **Visualization:** WordCloud, Matplotlib
+

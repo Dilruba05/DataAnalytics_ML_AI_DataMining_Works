@@ -71,6 +71,3 @@ The full technical implementation, including data visualizations and model evalu
 **[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1yKJVVp82g2YlO7I1kbeDnpSX0kbr1-0b#scrollTo=01bcf061)**
 
 ---
-
-## 📈 Current Status
-The project has successfully segmented the database into four unique customer profiles. The next phase involves deep-diving into these profiles to develop specific marketing "personae" and personalized campaign recommendations.

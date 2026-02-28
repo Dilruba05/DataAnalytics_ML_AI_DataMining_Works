@@ -165,3 +165,61 @@ The complete code, from data ingestion to the generation of XAI explanation plot
 * **Data Science:** Pandas, Scikit-Learn
 * **Explainable AI:** SHAP, LIME
 * **Visualization:** Seaborn, Matplotlib
+
+# 05. 🤖 Reinforcement Learning: Algorithm Comparison on Pendulum-v1
+
+This project features a systematic performance analysis of three prominent Reinforcement Learning (RL) algorithms—**PPO**, **A2C**, and **TD3**—within the **Pendulum-v1** continuous control environment (Gymnasium). The study evaluates how different actor-critic architectures handle the challenges of torque control and gravity compensation.
+
+
+## 🌍 Environment: Pendulum-v1
+The goal is to keep a frictionless pendulum standing upright by applying torque.
+* **Action Space:** Continuous (Torque).
+* **Observation Space:** Trigonometric functions of the angle ($\sin\theta$, $\cos\theta$) and angular velocity.
+* **Challenge:** The agent must learn to swing up and balance, requiring precise continuous control.
+
+
+
+---
+
+## 🛠️ Methodology & Training
+Three distinct algorithms were trained for a consistent budget of **30,000 timesteps** to ensure a fair "head-to-head" comparison:
+
+1.  **PPO (Proximal Policy Optimization):** An on-policy gradient method known for stability and reliability.
+2.  **A2C (Advantage Actor-Critic):** A synchronous, deterministic variant of A3C that balances the policy (Actor) and value function (Critic).
+3.  **TD3 (Twin Delayed DDPG):** An off-policy algorithm designed to reduce overestimation bias in continuous action spaces.
+
+### 📈 Training Workflow
+* **Logging:** Episode-level rewards were captured using the `Monitor` wrapper.
+* **Smoothing:** Applied rolling averages to training logs to visualize learning trends clearly.
+* **Reproducibility:** Used modular helper functions and set seeds to ensure consistent results.
+
+
+
+
+
+## 📊 Performance Evaluation
+The models were put through rigorous testing over multiple evaluation episodes. Key metrics included:
+* **Mean Total Reward:** How well the agent learned to balance the pendulum.
+* **Reward Consistency:** Measured via Variance and Standard Deviation to check for training stability.
+* **Inference Speed:** Assessing the computational efficiency of each model.
+
+
+## 💡 Comparative Insights
+The project concludes with a deep dive into the strengths and weaknesses of each approach:
+* **PPO vs. A2C:** Analyzing why on-policy methods often provide smoother convergence in this specific environment.
+* **TD3 Performance:** Evaluating if the added complexity of "Twin Critics" provided a significant advantage for a relatively simple pendulum task.
+* **Trade-offs:** A discussion on sample efficiency versus wall-clock training time.
+
+
+## 🚀 Technical Implementation
+The complete implementation, including video recordings of the agents and reward visualizations, is available here:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1bGYF6QU3SlSHUfcUEzcoUwkoAj7dkNz6#scrollTo=06238624)**
+
+---
+
+## 🧪 Tech Stack
+* **Framework:** Gymnasium (OpenAI Gym)
+* **RL Library:** Stable Baselines3
+* **Core Tools:** Python, PyTorch, NumPy
+* **Visualization:** Matplotlib, Seaborn, OpenCV (for video rendering)

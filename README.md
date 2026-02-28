@@ -344,3 +344,35 @@ The complete data cleaning process, statistical analysis, and model performance 
 * **Machine Learning:** Scikit-Learn
 * **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
+
+
+# 09. 🌸 Iris Species Classification: Support Vector Machines (SVM)
+
+This project explores the classic Iris dataset to classify three species of flowers—Setosa, Versicolor, and Virginica—based on their morphological measurements. By utilizing a **Support Vector Machine (SVM)**, the model identifies optimal decision boundaries to separate these biological classes.
+
+
+## 🎯 Project Objective
+The goal is to build a high-precision classifier that leverages the distinct physical characteristics of petals and sepals to automate species identification. The project emphasizes the importance of feature relationships and linear versus non-linear separability.
+
+
+## 🛠️ Data Insights & Pipeline
+* **Dataset Characteristics:** A perfectly balanced dataset of 150 samples (50 per species). Features include sepal/petal length and width.
+* **Exploratory Data Analysis (EDA):** Initial inspection via `sns.pairplot` revealed that **Setosa** is linearly separable from other species, while **Versicolor** and **Virginica** exhibit slight overlap in feature space.
+
+* **Pre-processing:** Verified a clean dataset with zero missing values and confirmed numerical data types for all feature inputs.
+* **Model Selection:** Implemented **SVM (Support Vector Machine)**, an ideal choice for this dataset due to its effectiveness in high-dimensional spaces and its ability to define clear margins between classes.
+
+
+
+## 🚀 Technical Implementation
+The complete analysis, including the statistical breakdown and the pairplot visualizations, can be found in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1KjWKt5zjekUk_0mwILv_ckWbAqPhs_pd#scrollTo=2e9e50ec)**
+
+---
+
+## 🧪 Tech Stack
+* **Language:** Python
+* **Machine Learning:** Scikit-Learn (SVM)
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Seaborn, Matplotlib

@@ -612,3 +612,42 @@ The complete comparative logic, model loading scripts, and sentiment score visua
 * **Libraries:** VADER, TextBlob
 * **Data Science:** Python, Pandas
 * **Visualization:** Matplotlib, Seaborn
+
+
+# 16. 📉 Scikit-Learn Case Study: Dual Model Evaluation
+
+This project provides a comprehensive benchmarking of **Classification** and **Regression** pipelines using Scikit-Learn. By applying **Logistic Regression** to medical data and **Ridge Regression** to housing data, it demonstrates robust model validation techniques, including 5-fold cross-validation and error distribution analysis.
+
+---
+
+## 🎯 Project Objective
+To implement a standardized evaluation framework that measures predictive reliability through both statistical metrics (Accuracy, MSE, $R^2$) and visual diagnostics (ROC Curves, Residual Plots).
+
+---
+
+## 🔬 Methodology & Key Results
+
+### 1. Classification (Breast Cancer Diagnosis)
+* **Model:** Logistic Regression.
+* **Outcome:** Achieved near-perfect separability with an **AUC ≈ 1.00**.
+* **Confusion Matrix:** High precision with only **2 misclassifications** out of 143 test cases, proving the model's reliability in clinical binary classification.
+ 
+
+### 2. Regression (California Housing)
+* **Model:** Ridge Regression.
+* **Outcome:** Captured general market trends but showed increased variance at higher price points.
+* **Diagnostic Insight:** The **Predicted vs. Actual** plot revealed underestimation for high-value properties, suggesting a need for non-linear modeling for luxury real estate segments.
+ 
+
+## 🚀 Technical Implementation
+The complete evaluation suite, including the cross-validation logic and performance visualizations, is available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1lw7kFeyQgyBLAJjre5u32Zclo4of3zYz#scrollTo=YY1U4f3xzVrk)**
+
+---
+
+## 🧪 Tech Stack
+* **Machine Learning:** Scikit-Learn (Logistic Regression, Ridge Regression)
+* **Validation:** 5-Fold Cross-Validation, ROC-AUC, Confusion Matrix
+* **Data Science:** Python, Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn

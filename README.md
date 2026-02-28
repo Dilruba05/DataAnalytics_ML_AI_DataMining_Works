@@ -72,7 +72,7 @@ The full technical implementation, including data visualizations and model evalu
 
 ---
   
-# 🍌 Comparative Analysis: Deep Learning for Banana and Orange Classification & Detection
+# 03.  Comparative Analysis: Deep Learning for Banana and Orange Classification & Detection
 
 This project provides a comprehensive end-to-end computer vision workflow comparing various architectures for the classification and localization of fruit (Bananas and Oranges). It bridges the gap between traditional Machine Learning and state-of-the-art Deep Learning models.
 
@@ -100,15 +100,12 @@ Comparison of three industry-standard detectors based on the "Speed vs. Accuracy
 
 
 
----
-
 ## 📊 Evaluation Metrics
 Models are rigorously tested using the following benchmarks:
 * **Classification:** Accuracy, Precision, Recall, F1-Score, and Confusion Matrices.
 * **Detection:** mean Average Precision (**mAP@50** and **mAP@50-95**).
 * **Efficiency:** Inference speed (ms/image) and Frames Per Second (FPS).
 
----
 
 ## 📜 Critical Comparative Analysis
 The project concludes with a detailed discussion on:
@@ -116,7 +113,6 @@ The project concludes with a detailed discussion on:
 * **Training Difficulty:** Computational requirements and convergence rates.
 * **Recommendation:** Evidence-based selection of the best detector for real-world agricultural or retail scenarios.
 
----
 
 ## 💻 Technical Implementation
 Explore the full training logs, visualizations, and comparative charts in the interactive notebook:

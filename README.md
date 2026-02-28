@@ -651,3 +651,47 @@ The complete evaluation suite, including the cross-validation logic and performa
 * **Validation:** 5-Fold Cross-Validation, ROC-AUC, Confusion Matrix
 * **Data Science:** Python, Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
+
+
+# 17. 🛒 Market Basket Analysis: Apriori & Association Rules
+
+This project applies the **Apriori Algorithm** to retail transaction data to uncover hidden purchasing patterns. By calculating **Support, Confidence, and Lift**, the analysis identifies which products are frequently bought together to optimize cross-selling and inventory strategies.
+
+---
+
+## 🎯 Project Objective
+To extract actionable consumer insights from transaction histories, enabling data-driven decisions for product bundling, store layout, and targeted marketing.
+
+---
+
+## 📊 Key Findings & Rules
+* **Most Frequent Items:** Jackets (54%), Shirts (52%), and Scarves (51%) dominate individual purchases.
+* **Primary Anchor Pair:** **(Jacket, Shirt)** is the most frequent combination with **29% support**, representing a fundamental "outfit" building block.
+
+
+### 📈 Strongest Association Rules
+| Rule (Antecedent → Consequent) | Confidence | Lift | Strategic Action |
+| :--- | :--- | :--- | :--- |
+| **Shoes → Jeans** | 51% | **1.19** | Highest correlation; cross-sell Jeans with footwear. |
+| **Shoes → Shirt** | 56% | 1.08 | Recommend Shirts to shoe buyers. |
+| **Shirt ↔ Jacket** | 56% | 1.03 | Reciprocal relationship; ideal for "Complete the Look" bundles. |
+
+---
+
+## 💡 Actionable Business Insights
+* **Strategic Bundling:** Create "Shoe & Jeans" or "Jacket & Shirt" sets with minor discounts to increase Average Order Value (AOV).
+* **Digital Merchandising:** Implement "Customers also bought" triggers on product pages for high-lift items like Shoes and Jackets.
+* **Store Optimization:** Place high-support items (Jackets/Shirts) in proximity to encourage natural basket growth.
+---
+
+## 🚀 Technical Implementation
+The complete Apriori implementation, including the generation of frequent itemsets and the filtered association rules table, is available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/10w9QKpHSnV-FeLJHp-z98saC4Zx02LdG#scrollTo=3a02283c)**
+
+---
+
+## 🧪 Tech Stack
+* **Algorithm:** Apriori (Association Rule Mining)
+* **Libraries:** MLxtend, Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn

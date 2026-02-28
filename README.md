@@ -7,12 +7,10 @@
 * **Source:** A collection of ~14,640 tweets regarding major U.S. airlines.
 * **Features:** Includes tweet text, sentiment labels (positive, neutral, negative), and metadata like negative reasons (e.g., "Late Flight" or "Customer Service Issue").
 
----
 
 ## 🎯 Project Goal
 The goal of this project is to demonstrate the practical application of both **Supervised** and **Unsupervised Learning** in Natural Language Processing (NLP). By using real-world social media data, the project explores how machines can interpret human emotion and automatically organize large volumes of unstructured text into meaningful categories.
 
----
 
 ## 🛠️ Tasks Performed
 1.  **Text Classification (Supervised):** Training a model to automatically sort tweets into three predefined categories: *Positive*, *Neutral*, or *Negative*. This simulates real-world systems like automated customer support routing.
@@ -29,7 +27,6 @@ You can view the full code, data preprocessing, and model implementation in the 
 
 This project performs an end-to-end data analysis and unsupervised machine learning pipeline to segment customers based on their demographics and purchasing behavior. By identifying distinct customer profiles, businesses can better tailor their marketing strategies and resource allocation.
 
----
 
 ## 🚀 Project Overview
 The primary goal is to transform raw marketing data into actionable insights using clustering techniques. The workflow covers everything from initial data cleaning and feature engineering to dimensionality reduction and cluster profiling.
@@ -76,7 +73,6 @@ The full technical implementation, including data visualizations and model evalu
 
 This project provides a comprehensive end-to-end computer vision workflow comparing various architectures for the classification and localization of fruit (Bananas and Oranges). It bridges the gap between traditional Machine Learning and state-of-the-art Deep Learning models.
 
----
 
 ## 🏗️ Project Architecture
 
@@ -89,7 +85,6 @@ We evaluate three distinct levels of complexity to understand the evolution of i
 * **Traditional ML:** Color Histogram extraction + Support Vector Machine (SVM).
 * **Custom CNN:** A deep learning model built from scratch to learn spatial hierarchies.
 * **Transfer Learning:** Fine-tuning **MobileNetV2** for high accuracy with low computational overhead.
-
 
 
 ### 3. Object Detection (Localization & Identification)
@@ -119,19 +114,18 @@ Explore the full training logs, visualizations, and comparative charts in the in
 
 **[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/10O7s4OwA3XKsYc4Dg2N-qHjYwXyLuZ4o?usp=sharing#scrollTo=eee23334)**
 
+---
 
 # 04. 🎓 Student Engagement Prediction & Explainable AI (XAI)
 
 This project addresses the "Black Box" nature of machine learning in education. By leveraging behavioral data from Learning Management Systems (LMS), I developed a predictive model that not only identifies student engagement levels but also provides transparent explanations for *why* a student is categorized as high or low risk.
 
----
 
 ## 🎯 Project Goals
 * **Predictive Modeling:** Accurately classify student engagement into **Low**, **Moderate**, or **High** categories.
 * **XAI Integration:** Implement **SHAP** and **LIME** to provide actionable insights for educators.
 * **Strategic Intervention:** Identify key behavioral triggers (e.g., low forum activity vs. high video consumption) to help course designers improve retention.
 
----
 
 ## 📊 Dataset & Methodology
 
@@ -151,8 +145,6 @@ To bridge the gap between data and human decision-making, we use:
 * **LIME:** Used for **Local Interpretability**—explaining specific, individual student predictions to help teachers understand a single student's unique struggle.
 
 
-
----
 
 ## 💡 Key Insights & Outcomes
 * **Behavioral Mapping:** Identified that specific combinations of activity (like late-night logins vs. consistent quiz attempts) are higher predictors of success than total time spent.

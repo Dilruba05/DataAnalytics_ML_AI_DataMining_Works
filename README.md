@@ -376,3 +376,50 @@ The complete analysis, including the statistical breakdown and the pairplot visu
 * **Machine Learning:** Scikit-Learn (SVM)
 * **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Seaborn, Matplotlib
+
+# 10. ❤️ Heart Disease Classification: Binary vs. Multiclass Analysis
+
+This project explores the predictive power of Machine Learning in healthcare, specifically focusing on cardiovascular diagnostics. It compares the efficiency of **Logistic Regression** and **Random Forest** across two distinct challenges: simple presence-absence detection (Binary) and disease severity grading (Multiclass).
+
+
+## 🎯 Project Objectives
+1.  **Binary Classification:** Predict whether a patient has heart disease (1) or not (0).
+2.  **Multiclass Classification:** Predict the specific severity level of heart disease across 5 distinct classes (0 to 4).
+3.  **Comparative Evaluation:** Analyze how model performance degrades when moving from binary labels to complex, imbalanced multi-class data.
+
+---
+
+## 🔬 Methodology & Key Results
+
+### Phase 1: Binary Classification
+Focused on high-accuracy screening using two competitive classifiers.
+* **Logistic Regression:** Achieved an accuracy of **0.848** with a high **ROC-AUC of 0.920**, demonstrating excellent class separation.
+* **Random Forest:** Emerged as the top performer with an accuracy of **0.853** and a **ROC-AUC of 0.930**.
+
+
+### Phase 2: Multiclass Classification (Disease Severity)
+A more complex task using a Random Forest classifier restricted to numeric features.
+* **Performance:** Overall accuracy dropped significantly to **0.484**.
+* **The Imbalance Challenge:** The model performed well on the majority class (Class 0) but struggled with minority classes (2, 3, and 4). 
+* **Critical Finding:** Class 4 (highest severity) yielded **0 precision and recall**, highlighting a significant "Class Imbalance" issue where the model failed to identify any instances of the rarest category.
+
+
+
+## 💡 Summary of Insights
+* **Model Robustness:** Random Forest showed a marginal lead in binary tasks due to its ability to handle non-linear relationships.
+* **Data Quality:** The multiclass phase demonstrated that a simplified feature set and skewed data distribution are primary barriers to accurate medical grading.
+* **Future Directions:** Improving the multiclass model would require advanced techniques like **SMOTE (Oversampling)** or weighted loss functions to account for the underrepresented severity levels.
+
+
+## 🚀 Technical Implementation
+The complete data analysis, performance reports, and class distribution charts are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1l6ot3dpvMzf6a07UQ3LCSK-ORply0wVU#scrollTo=1NAkZRMYvkR0)**
+
+
+## 🧪 Tech Stack
+* **Language:** Python
+* **Machine Learning:** Scikit-Learn (Logistic Regression, Random Forest)
+* **Evaluation:** ROC-AUC, Precision-Recall, Confusion Matrix
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn

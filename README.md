@@ -530,3 +530,40 @@ The complete detection pipeline, including model weight selection and annotated 
 * **Deep Learning:** YOLOv8 (Ultralytics)
 * **Image Processing:** Scikit-Image (`skimage`)
 * **Libraries:** OpenCV, Matplotlib, Python
+
+
+# 14. 💳 Credit Card Segmentation: Behavioral Clustering & Insights
+
+This project utilizes **K-Means Clustering** to segment credit card users into distinct behavioral profiles. By analyzing credit limits and engagement channels, the model identifies specific customer archetypes to drive personalized financial services.
+
+
+## 🎯 Project Objective
+To partition a customer database into actionable segments, allowing for optimized credit limit allocations and targeted digital transformation strategies.
+
+
+## 🛠️ Data Insights & Segmentation
+* **Clustering Methodology:** Applied K-Means (non-PCA) to isolate two primary customer segments based on `Avg_Credit_Limit` and `Total_Credit_Cards`.
+
+
+### 📊 Segment Profiles
+* **Cluster 0 (Standard):** Characterized by lower credit limits, fewer cards, and high dependency on phone support (manual banking).
+* **Cluster 1 (Premium/Digital):** High-limit users with multiple cards and high engagement across online and in-person banking channels.
+
+
+## 💡 Strategic Recommendations
+* **Digital Migration (Cluster 0):** Promote online services to reduce call volumes and offer incremental credit limit increases to incentivize usage.
+* **Loyalty & Retention (Cluster 1):** Deploy premium card products and personalized financial advisory services to maximize lifetime value.
+
+
+
+## 🚀 Technical Implementation
+The complete clustering logic, scatter plot visualizations, and feature distribution analysis are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1jnXbXoKwF7InGVHxG4quYH-ofAowZ6#scrollTo=c23cc652)**
+
+---
+
+## 🧪 Tech Stack
+* **Machine Learning:** Scikit-Learn (K-Means)
+* **Data Science:** Python, Pandas, NumPy
+* **Visualization:** Seaborn, Matplotlib

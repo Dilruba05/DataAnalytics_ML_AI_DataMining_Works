@@ -490,3 +490,43 @@ The complete preprocessing logic and frequency analysis charts are available in 
 * **NLP Library:** NLTK
 * **Data Science:** Pandas, NumPy
 * **Visualization:** WordCloud, Seaborn, Matplotlib
+
+
+# 13. 🔍 Multi-Domain Object Detection: Traditional & Deep Learning
+
+This project showcases a versatile approach to object detection, comparing classical image processing with state-of-the-art **YOLOv8** architectures. It spans diverse domains, from celestial blob detection to real-time traffic and wildlife identification.
+
+---
+
+## 🎯 Project Objective
+To demonstrate the adaptability of detection algorithms across varying scales and contexts, including astronomical data, urban environments, and natural habitats.
+
+
+## 🛠️ Methodology & Outcomes
+
+### 1. Astronomical Blob Detection
+* **Technique:** Laplacian of Gaussian (LoG) via `skimage`.
+* **Result:** Successfully localized **285 stars** in celestial imagery using traditional computer vision.
+
+
+### 2. Urban & Wildlife Detection (YOLOv8)
+* **Traffic:** Utilized **YOLOv8n** to detect **29 cars and 1 truck**, proving efficiency for real-time monitoring.
+* **Wildlife:** Applied the high-accuracy **YOLOv8x** model to identify a diverse set of animals (Elephants, Zebras, Giraffes).
+
+
+### 3. Domestic Object Recognition
+* **Result:** Identified a variety of household items including **bananas, apples, oranges, and broccoli**, highlighting the model's granular classification capabilities.
+
+---
+
+## 🚀 Technical Implementation
+The complete detection pipeline, including model weight selection and annotated output visualizations, is available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1Dk5U2vMJrpkssVuBYQjB_fNliaEfSE6v?usp=sharing)**
+
+---
+
+## 🧪 Tech Stack
+* **Deep Learning:** YOLOv8 (Ultralytics)
+* **Image Processing:** Scikit-Image (`skimage`)
+* **Libraries:** OpenCV, Matplotlib, Python

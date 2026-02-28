@@ -567,3 +567,48 @@ The complete clustering logic, scatter plot visualizations, and feature distribu
 * **Machine Learning:** Scikit-Learn (K-Means)
 * **Data Science:** Python, Pandas, NumPy
 * **Visualization:** Seaborn, Matplotlib
+
+
+# 15. 🎭 Comparative Sentiment Analysis: TextBlob, VADER, and Transformers
+
+This project evaluates the nuances of Natural Language Processing (NLP) by comparing three distinct sentiment analysis methodologies. By testing clear and ambiguous statements, the project highlights the strengths of rule-based systems versus deep learning models in capturing human emotion.
+
+---
+
+## 🎯 Project Objective
+To benchmark **TextBlob**, **VADER**, and **Hugging Face Transformers** against real-world feedback to determine which architecture most accurately handles linguistic nuance and "borderline" sentiment.
+
+---
+
+## 📊 Methodology & Comparative Results
+
+### 1. The Multi-Model Approach
+* **TextBlob:** Rule-based polarity/subjectivity scoring.
+* **VADER:** Lexicon and rule-based tool specifically attuned to social media sentiments.
+* **Transformers:** State-of-the-art deep learning model (Hugging Face) for context-aware classification.
+
+### 2. Key Findings: Accuracy vs. Nuance
+| Input Text | TextBlob | VADER | Transformer |
+| :--- | :--- | :--- | :--- |
+| "Lecture was well structured..." | ✅ Positive | ✅ Positive | ✅ Positive (High Conf.) |
+| "Service is terrible..." | ❌ Negative | ❌ Negative | ❌ Negative (High Conf.) |
+| "Content is okay, nothing special." | ✅ Positive | ❌ Negative | ❌ Negative |
+
+
+
+**Critical Insight:** While all models agree on extreme sentiments, "Text 3" reveals that rule-based models (TextBlob) can struggle with phrases like "nothing special," whereas Transformers correctly interpret the underlying negative tone.
+
+
+
+## 🚀 Technical Implementation
+The complete comparative logic, model loading scripts, and sentiment score visualizations are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1ZQX8Eam0EshocTujlA0hF396pcvyxred#scrollTo=3e6f0c1c)**
+
+---
+
+## 🧪 Tech Stack
+* **NLP Framework:** Hugging Face Transformers
+* **Libraries:** VADER, TextBlob
+* **Data Science:** Python, Pandas
+* **Visualization:** Matplotlib, Seaborn

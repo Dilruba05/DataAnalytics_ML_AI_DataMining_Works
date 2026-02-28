@@ -695,3 +695,48 @@ The complete Apriori implementation, including the generation of frequent itemse
 * **Algorithm:** Apriori (Association Rule Mining)
 * **Libraries:** MLxtend, Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
+
+# 18. 🚨 Anomaly Detection: Isolation Forest vs. Local Outlier Factor (LOF)
+
+This project explores **Unsupervised Learning** techniques to identify outliers within the Breast Cancer dataset. By comparing global (Isolation Forest) and local (LOF) detection methods, the study highlights how consensus-based flagging improves the reliability of anomaly detection in medical data.
+
+---
+
+## 🎯 Project Objective
+To isolate highly irregular data points that deviate from the standard cluster of diagnostic samples, which could represent rare clinical cases, data entry errors, or extreme biological variations.
+
+---
+
+## 🛠️ Methodology & Detection Models
+* **Isolation Forest:** A tree-based approach that isolates anomalies by randomly selecting features and split values. Anomalies are "easier" to isolate and thus have shorter path lengths.
+
+* **Local Outlier Factor (LOF):** A density-based method that identifies outliers by comparing the local density of a point to the densities of its neighbors.
+
+
+---
+
+## 📊 Results & Consensus Analysis
+The models were applied to a dataset of **569 total samples**:
+
+| Metric | Isolation Forest | Local Outlier Factor (LOF) |
+| :--- | :--- | :--- |
+| **Anomalies Detected** | 29 | 29 |
+| **Top Anomalies** | Lowest Decision Scores | Most Negative LOF Scores |
+
+### 💡 The "Method Overlap" Insight
+* **Consensus Count:** **13 samples** were flagged by **both** algorithms.
+* **Significance:** Points identified by multiple disparate mathematical approaches are highly likely to be true anomalies, providing a robust "confidence filter" for data auditing.
+
+---
+
+## 🚀 Technical Implementation
+The complete implementation, scoring logic, and outlier distribution analysis are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1rc8VrN1vusP8MG0k_pmMWpWFdyhk9zTn?usp=sharing)**
+
+---
+
+## 🧪 Tech Stack
+* **Machine Learning:** Scikit-Learn (IsolationForest, LocalOutlierFactor)
+* **Data Science:** Python, Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn

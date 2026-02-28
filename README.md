@@ -310,3 +310,37 @@ The complete data pipeline, including cluster profiling and visualizations, is a
 * **Machine Learning:** Scikit-Learn (K-Means)
 * **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Seaborn, Matplotlib
+
+# 08. 🚢 Titanic Survival Prediction: EDA & Binary Classification
+
+This project implements a classic machine learning workflow to predict passenger survival on the Titanic. It covers the entire pipeline from exploratory data analysis (EDA) and feature engineering to training and evaluating a **Logistic Regression** model.
+
+---
+
+## 🎯 Project Objective
+The goal is to determine the key factors that influenced survival rates (such as age, gender, and class) and build a classification model that accurately predicts whether a passenger survived the disaster based on these features.
+
+
+## 🛠️ Data Pipeline & Methodology
+* **Exploratory Data Analysis (EDA):** Visualized survival distributions across various demographics to identify significant patterns, such as the "women and children first" protocol.
+
+* **Data Cleaning:** Handled missing values through median imputation for `Age` and removal of high-sparsity columns like `Cabin`. Irrelevant features (e.g., `Ticket`, `Name`) were dropped to reduce noise.
+* **Feature Encoding:** Converted categorical variables (`Sex`, `Embarked`) into numerical format using **LabelEncoder** for model compatibility.
+* **Model Training:** Utilized **Logistic Regression** to establish a baseline for binary classification, splitting the data into training and testing sets for unbiased validation.
+
+* **Model Evaluation:** Performance was assessed using a **Confusion Matrix** and **Classification Report** (Precision, Recall, and F1-Score) to ensure a balanced view of predictive power beyond simple accuracy.
+
+
+
+## 🚀 Technical Implementation
+The complete data cleaning process, statistical analysis, and model performance metrics are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1unnS2NgqvGfl0rFFhSTZXaliYcmwDFHe?usp=sharing)**
+
+---
+
+## 🧪 Tech Stack
+* **Language:** Python
+* **Machine Learning:** Scikit-Learn
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn

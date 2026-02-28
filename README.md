@@ -223,3 +223,58 @@ The complete implementation, including video recordings of the agents and reward
 * **RL Library:** Stable Baselines3
 * **Core Tools:** Python, PyTorch, NumPy
 * **Visualization:** Matplotlib, Seaborn, OpenCV (for video rendering)
+
+# 06. 🏠 Housing Value Prediction: Decision Tree Regression
+
+This project implements a supervised learning pipeline to predict housing prices using a **Decision Tree Regressor**. By analyzing various property features, the model learns to estimate market values and provides a clear visualization of predictive accuracy versus actual real estate data.
+
+---
+
+## 🎯 Project Objective
+The goal is to build a robust regression model capable of mapping complex housing features to a continuous target variable (Price). The project focuses on the trade-off between model complexity and generalization, ensuring the tree does not overfit the training data.
+
+---
+
+## 🛠️ Data Pipeline
+
+### 1. Data Preparation
+* **Dataset:** `housing_dataset.csv` containing key features like square footage, location metrics, and property age.
+* **Preprocessing:** Separation of independent features ($X$) and the target variable ($y$).
+* **Data Splitting:** Implementation of a Train/Test split to validate the model on unseen data, ensuring unbiased performance reporting.
+
+### 2. Model Implementation
+* **Algorithm:** `DecisionTreeRegressor` (Scikit-Learn).
+* **Training:** The model was fitted to the training set, allowing the tree to partition the data space into hyper-rectangles based on feature thresholds.
+
+
+
+---
+
+## 📊 Performance Evaluation
+To determine the model's reliability, three standard regression metrics were utilized:
+
+| Metric | Definition | Purpose |
+| :--- | :--- | :--- |
+| **MSE** | Mean Squared Error | Penalizes larger errors more heavily; useful for detecting outliers. |
+| **MAE** | Mean Absolute Error | Provides a direct "average error" in the same units as the house price. |
+| **R²** | Coefficient of Determination | Explains what percentage of the price variance is captured by the model. |
+
+### 📈 Visual Validation
+A **Scatter Plot (Actual vs. Predicted)** was generated to visually audit the model. A perfect model would show all points along a $45^\circ$ diagonal line; deviations from this line highlight specific price ranges where the model may require further tuning.
+
+
+
+---
+
+## 🚀 Technical Implementation
+The complete Python code, data cleaning steps, and evaluation charts are available in the Google Colab notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/1zcnDRer7v7pBzXATRqwJ2YcUTNL1aBZK?usp=sharing)**
+
+---
+
+## 🧪 Tech Stack
+* **Language:** Python
+* **Machine Learning:** Scikit-Learn
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn

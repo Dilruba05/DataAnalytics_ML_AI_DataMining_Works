@@ -72,3 +72,53 @@ The full technical implementation, including data visualizations and model evalu
 
 ---
   
+# 🍌 Comparative Analysis: Deep Learning for Banana and Orange Classification & Detection
+
+This project provides a comprehensive end-to-end computer vision workflow comparing various architectures for the classification and localization of fruit (Bananas and Oranges). It bridges the gap between traditional Machine Learning and state-of-the-art Deep Learning models.
+
+---
+
+## 🏗️ Project Architecture
+
+### 1. Dataset Preparation
+* **Classification:** Utilizes the **Fruits-360** dataset for high-quality, single-object fruit images.
+* **Object Detection:** Custom multi-fruit dataset annotated in **YOLO format** for bounding box prediction.
+
+### 2. Image Classification (The Three-Tier Approach)
+We evaluate three distinct levels of complexity to understand the evolution of image recognition:
+* **Traditional ML:** Color Histogram extraction + Support Vector Machine (SVM).
+* **Custom CNN:** A deep learning model built from scratch to learn spatial hierarchies.
+* **Transfer Learning:** Fine-tuning **MobileNetV2** for high accuracy with low computational overhead.
+
+
+
+### 3. Object Detection (Localization & Identification)
+Comparison of three industry-standard detectors based on the "Speed vs. Accuracy" trade-off:
+* **YOLOv8n (Ultralytics):** Optimized for real-time performance and edge deployment.
+* **SSDLite320:** A lightweight Single Shot Detector designed for mobile devices.
+* **Faster R-CNN:** A high-precision, two-stage detector for maximum localization accuracy.
+
+
+
+---
+
+## 📊 Evaluation Metrics
+Models are rigorously tested using the following benchmarks:
+* **Classification:** Accuracy, Precision, Recall, F1-Score, and Confusion Matrices.
+* **Detection:** mean Average Precision (**mAP@50** and **mAP@50-95**).
+* **Efficiency:** Inference speed (ms/image) and Frames Per Second (FPS).
+
+---
+
+## 📜 Critical Comparative Analysis
+The project concludes with a detailed discussion on:
+* **Accuracy-Speed Trade-offs:** Which model wins for real-time video vs. static high-res analysis?
+* **Training Difficulty:** Computational requirements and convergence rates.
+* **Recommendation:** Evidence-based selection of the best detector for real-world agricultural or retail scenarios.
+
+---
+
+## 💻 Technical Implementation
+Explore the full training logs, visualizations, and comparative charts in the interactive notebook:
+
+**[🔗 View Google Colab Notebook](https://colab.research.google.com/drive/10O7s4OwA3XKsYc4Dg2N-qHjYwXyLuZ4o?usp=sharing#scrollTo=eee23334)**

@@ -1,5 +1,40 @@
 # DataAnalytics_ML_AI_DataMining_Works
 
+
+# 🚀 Data Science & AI Portfolio
+Welcome to my project repository! Below is a curated summary of 18 projects demonstrating my expertise in Machine Learning, NLP, Computer Vision, and Reinforcement Learning, followed by detailed technical breakdowns for each implementation.
+
+---
+
+## 📂 Portfolio Overview
+
+| # | Category | Project Title | Key Tech Stack | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | **NLP** | Twitter Sentiment Analysis | TextBlob, VADER, Transformers | [Open Colab 🔗](https://colab.research.google.com/drive/1ZQX8Eam0EshocTujlA0hF396pcvyxred) |
+| **02** | **NLP** | SMS Spam Detection: NLTK Pipeline | NLTK, Stopwords, Tokenization | [Open Colab 🔗](https://colab.research.google.com/drive/12cskgKD47gk3qHRq89CfMS7ZzYXRaUyn) |
+| **03** | **NLP** | SMS Analytics & EDA | WordCloud, Frequency Analysis | [Open Colab 🔗](https://colab.research.google.com/drive/14Xskqbadn8rdTOBXY2Dt08QDXn4hF-c8) |
+| **04** | **CV** | Diverse Object Detection | YOLOv8, skimage, OpenCV | [Open Colab 🔗](https://colab.research.google.com/drive/1Dk5U2vMJrpkssVuBYQjB_fNliaEfSE6v) |
+| **05** | **RL** | Algorithm Comparison (Pendulum-v1) | PPO, A2C, TD3, Gymnasium | [Open Colab 🔗](https://colab.research.google.com/drive/1bGYF6QU3SlSHUfcUEzcoUwkoAj7dkNz6) |
+| **06** | **ML** | Housing Value Prediction | DecisionTreeRegressor, MSE/R² | [Open Colab 🔗](https://colab.research.google.com/drive/1zcnDRer7v7pBzXATRqwJ2YcUTNL1aBZK) |
+| **07** | **ML** | Customer Segmentation (K-Means) | Scikit-Learn, StandardScaler | [Open Colab 🔗](https://colab.research.google.com/drive/1DRy-0KrirAAelPnosIct3HUp3eT0hfin) |
+| **08** | **ML** | Titanic Survival: EDA & Classif. | Logistic Regression, Encoding | [Open Colab 🔗](https://colab.research.google.com/drive/1unnS2NgqvGfl0rFFhSTZXaliYcmwDFHe) |
+| **09** | **ML** | Iris Species Classification | SVM (Support Vector Machines) | [Open Colab 🔗](https://colab.research.google.com/drive/1KjWKt5zjekUk_0mwILv_ckWbAqPhs_pd) |
+| **10** | **ML** | Heart Disease: Binary vs. Multiclass | Random Forest, ROC-AUC | [Open Colab 🔗](https://colab.research.google.com/drive/1l6ot3dpvMzf6a07UQ3LCSK-ORply0wVU) |
+| **11** | **ML** | Credit Card Behavioral Clustering | K-Means, Marketing Insights | [Open Colab 🔗](https://colab.research.google.com/drive/1jnXbXoKwF7InGVHxG4quYH-N-ofAowZ6) |
+| **12** | **ML** | Scikit-Learn Model Evaluation | Logistic/Ridge, 5-Fold CV | [Open Colab 🔗](https://colab.research.google.com/drive/1lw7kFeyQgyBLAJjre5u32Zclo4of3zYz) |
+| **13** | **ML** | Market Basket Analysis | Apriori, Association Rules | [Open Colab 🔗](https://colab.research.google.com/drive/10w9QKpHSnV-FeLJHp-z98saC4Zx02LdG) |
+| **14** | **ML** | Anomaly Detection (Breast Cancer) | Isolation Forest, LOF | [Open Colab 🔗](https://colab.research.google.com/drive/1rc8VrN1vusP8MG0k_pmMWpWFdyhk9zTn) |
+
+---
+
+## 🧪 Tech Stack Summary
+* **ML/Data:** Scikit-Learn, Pandas, NumPy, MLxtend
+* **Deep Learning/CV:** YOLOv8, OpenCV, Hugging Face
+* **NLP:** NLTK, VADER, TextBlob
+* **RL:** Gymnasium, Stable Baselines3
+
+---
+
 # 01.  NLP Discovery: Classification, Clustering, and Sentiment Analysis
 
 ## 📊 Dataset
